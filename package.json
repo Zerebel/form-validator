@@ -1,0 +1,30 @@
+{
+  "name": "form-validator",
+  "version": "1.0.0",
+  "description": "Web form validation",
+  "main": "index.html",
+  "scripts": {
+    "tail": "tailwindcss -- watch -i ./Styles/input.css -o ./Styles/output.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zerebel/form-validator.git"
+  },
+  "keywords": [
+    "web",
+    "form",
+    "validate",
+    "js",
+    "tailwind",
+    "Zerebel"
+  ],
+  "author": "Zerebel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zerebel/form-validator/issues"
+  },
+  "homepage": "https://github.com/Zerebel/form-validator#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}
