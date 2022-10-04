@@ -682,12 +682,32 @@ video {
   outline-style: solid;
 }
 
+.\!outline {
+  outline-style: solid !important;
+}
+
 .outline-1 {
   outline-width: 1px;
 }
 
+.outline-pink-700 {
+  outline-color: #be185d;
+}
+
+.outline-green-500 {
+  outline-color: #22c55e;
+}
+
+.outline-green-600 {
+  outline-color: #16a34a;
+}
+
 .invalid\:outline-yellow-600:invalid {
   outline-color: #ca8a04;
+}
+
+.invalid\:outline-green-600:invalid {
+  outline-color: #16a34a;
 }
 
 .hover\:text-white:hover {
