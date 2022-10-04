@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="styles/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Heebo:100,200,300,regular,500,600,700,800,900"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-heebo">
+    <header
+      class="flex justify-center items-center mt-6 text-2xl font-semibold lg:text-3xl xl:text-4xl 2xl:text-5xl"
+    >
+      <h1>Validating Web Forms</h1>
+    </header>
+    <main class="flex justify-center items-center">
+      <form
+        class="my-4 px-4 flex flex-col gap-4 md:gap-5 lg:gap-6 w-3/4 lg:w-2/4"
+        method="get"
+      >
+        <!--** First Name  -->
+        <div class="flex flex-col">
+          <label for="firstName" class="text-lg font-medium">First Name</label>
+          <input
+            type="text"
+            id="firstName"
+            name="lastName"
+            class="outline outline-1 rounded px-1"
+          />
+          <p class="mt-2 hidden text-yellow-600" id="invalidFirstName">
+            First name must be alphanumeric and contain 3 - 16 characters
+          </p>
+        </div>
+        <!--** Last Name -->
+        <div class="flex flex-col w-full">
+          <label for="lastName" class="text-lg font-medium">Last Name</label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            class="peer invalid:outline-yellow-600 outline outline-1 rounded px-1"
+          />
+          <p class="mt-2 hidden text-yellow-600" id="invalidLastName">
+            First name must be alphanumeric and contain 3 - 16 characters
+          </p>
+        </div>
+        <!--** Email  -->
+        <div class="flex flex-col w-full">
+          <label for="Email" class="text-lg font-medium">Email</label>
+          <input
+            type="text"
+            id="Email"
+            name="email"
+            class="peer invalid:outline-yellow-600 outline outline-1 rounded px-1"
+          />
+          <p class="mt-2 hidden text-yellow-600" id="invalidEmail">
+            Email must be a valid address, e.g. example@example.com
+          </p>
+        </div>
+        <!--** Password  -->
+        <div class="flex flex-col w-full">
+          <label for="Password" class="text-lg font-medium">Password</label>
+          <input
+            type="password"
+            id="Password"
+            name="password"
+            class="peer invalid:outline-yellow-600 outline outline-1 rounded px-1"
+          />
+          <p class="mt-2 hidden text-yellow-600" id="invalidPassword">
+            Password must be alphanumeric (@, _ and -are also allowed) and
+            <wbr /> between 6-20 characters
+          </p>
+        </div>
+        <!--** Telephone  -->
+        <div class="flex flex-col w-full">
+          <label for="telephone" class="text-lg font-medium">Telephone</label>
+          <input
+            type="tel"
+            id="telephone"
+            name="telephone"
+            class="peer invalid:outline-yellow-600 outline outline-1 rounded px-1"
+          />
+          <p class="mt-2 hidden text-yellow-600" id="invalidTel">
+            A valid Telephone number (11 digits and 333-333-3334)
+          </p>
+        </div>
+        <!--** Bio  -->
+        <div class="flex flex-col w-full">
+          <label for="bio" class="text-lg font-medium">Your Bio</label>
+          <input
+            type="text"
+            id="bio"
+            name="bio"
+            class="peer invalid:outline-yellow-600 outline outline-1 rounded px-1"
+          />
+          <p class="mt-2 hidden text-yellow-600" id="invalidBio">
+            Bio must contain only lowercase letters, underscores, hyphens &shy;
+            and between 8-50 characters
+          </p>
+        </div>
+        <!--**Submit  -->
+        <input
+          type="submit"
+          id="btnSubmit"
+          value="Submit"
+          class="bg-slate-500 hover:text-white text-xl active:text-yellow-100 cursor-pointer rounded-sm self-start max-w-min px-4 py-2 md:px-6 lg:px-8"
+        />
+      </form>
+    </main>
+  </body>
+</html>

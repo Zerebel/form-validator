@@ -4,7 +4,7 @@
   "description": "Web form validation",
   "main": "index.html",
   "scripts": {
-    "tail": "tailwindcss -- watch -i ./Styles/input.css -o ./Styles/output.css"
+    "tail": "tailwindcss --watch -i ./Styles/input.css -o ./Styles/output.css"
   },
   "repository": {
     "type": "git",
